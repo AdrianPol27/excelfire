@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+.ft-monoton {font-family: 'Monoton', cursive; word-spacing: 1rem;}
+
+.text-justify {text-align: justify;}
+
+/* Site Preloader Start */
+#site-preloader {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  background-color: #111;
+  z-index: 2000;
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #fff;
+  top: 50%;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+/* Site Preloader End */
+
+/* Site Hero Start */
+.site-hero {
+  overflow: hidden;
+  height: 90vh;
+}
+.site-hero-bg {
+  background-image: url('../../assets/images/site-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  line-height: .1rem;
+}
+/* Site Hero End */
+
+/* Site Clients Start */
+.site-clients img {filter: saturate(0%)}
+.site-clients img:hover {filter: none}
+/* Site Clients End */
