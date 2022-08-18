@@ -1,7 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-.ft-monoton {font-family: 'Monoton', cursive; word-spacing: 1rem;}
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+.ft-racing-sans {font-family: 'Racing Sans One', cursive;}
+.color-1 {color: #373578;}
+.color-2 {color: #f70037;}
 
 .text-justify {text-align: justify;}
+
+#more1, #more2, #more3, #more4, #more5, #more6 {display: none;}
 
 /* Site Preloader Start */
 #site-preloader {
@@ -66,18 +70,26 @@
 
 /* Site Hero Start */
 .site-hero {
-  overflow: hidden;
-  height: 90vh;
-}
-.site-hero-bg {
-  background-image: url('../../assets/images/site-hero.jpg');
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(30, 20, 150, 0.5)), url("../.././assets/images/site-hero.jpg")center, no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  line-height: .1rem;
+}
+.site-hero img {
+  width: 300px;
+}
+.site-hero .site-hero-bg p {
+  text-shadow: 2px 2px #fff;
+}
+@supports (-webkit-text-stroke: 2px #f70037) {
+  .site-hero .site-hero-bg h1 {
+    -webkit-text-stroke: 2px #f70037;
+    -webkit-text-fill-color: white;
+    line-height: 3.5rem;
+  }
 }
 /* Site Hero End */
 
@@ -85,3 +97,71 @@
 .site-clients img {filter: saturate(0%)}
 .site-clients img:hover {filter: none}
 /* Site Clients End */
+
+/* Site Services Start */
+.site-services {
+	font-family: "Poppins", sans-serif;
+	color: #fff;
+}
+.site-services .header-section {margin-bottom: 35px;}
+.site-services .header-section .title {
+	position: relative;
+	margin-bottom: 40px;
+	padding-bottom: 25px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.site-services .header-section .title:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 140px;
+	height: 1px;
+	background-color: #f70037;
+}
+.site-services .header-section .title:after {
+	content: "";
+	position: absolute;
+	bottom: -1px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 45px;
+	height: 3px;
+	background-color: #f70037;
+}
+.site-services .header-section .title span {
+	color: #f70037;
+}
+.site-services .single-service {
+	background-color: #24252a;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+}
+.site-services .single-service .part-1 {
+	padding: 20px 0 10px 20px; 
+  background-color: #bc2025;
+}
+.site-services .single-service .part-1 .title {
+	font-size: 17px;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	line-height: 1.8em;
+}
+.site-services .single-service .part-2 {padding: 30px 40px 40px;}
+.site-services .single-service .part-2 .description {
+	margin-bottom: 22px;
+	color: #6f6f71;
+	font-size: 14px;
+	line-height: 1.8em;
+}
+.site-services .single-service .part-2 a {
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+}
+.site-services .single-service .part-2 a i {
+	margin-right: 10px;
+	color: #f70037;
+}
+/* Site Services End */

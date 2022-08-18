@@ -1,15 +1,15 @@
-<div class="bg-dark">
-  <button type="button" data-bs-toggle="collapse" data-bs-target="#bottomNavbar" class="btn text-white w-100 d-lg-none d-md-none d-sm-block d-xs-block" style="background-color: #bc2025;"><i class="bi bi-list me-2"></i> Menu</button>
+<div style="background-color: #bc2025;">
+  <button type="button" data-bs-toggle="collapse" data-bs-target="#bottomNavbar" class="btn text-white fs-5 w-100 d-lg-none d-md-none d-sm-block d-xs-block" style="background-color: #bc2025;"><i class="bi bi-list me-2"></i> Menu</button>
   <div class="container">
     <div class="collapse navbar-md-collapse px-2" id="bottomNavbar">
       <div class="container-fluid">
         <div class="d-flex">
           <div class="flex-grow-1">
-            <a href="#" class="active d-inline-block customNav">Home</a>
+            <a href="/" class="active d-inline-block customNav">Home</a>
             <a href="/about" class="d-inline-block customNav">About</a>
-            <a href="#" class="d-inline-block customNav">Services</a>
-            <a href="#" class="d-inline-block customNav">FAQs</a>
-            <a href="#" class="d-inline-block customNav">Contact Us</a>
+            <a href="/services" class="d-inline-block customNav">Services</a>
+            <a href="/faqs" class="d-inline-block customNav">FAQs</a>
+            <a href="/contact-us" class="d-inline-block customNav">Contact Us</a>
           </div>
         </div>
       </div>
@@ -19,12 +19,16 @@
 
 <!-- Site Hero Start -->
 <div class="site-hero">
-  <div class="site-hero-bg">
+  <div class="col-md-12">
     <div class="container">
-      <p class="lead text-white" data-aos="fade-left">Serving Western Colorado</p>
-      <h1 class="display-4 flex text-uppercase text-white ft-monoton" data-aos="fade-right">Excellence in <br> Fire Safety</h1>
+      <div>
+        <img src=".././assets/images/logo-transparent.png" alt="">
+      </div>
+      <span class="h3 fw-light">Serving Southwest Michigan</span>
+      <h1 class="display-4 text-uppercase ft-racing-sans"><span class="color-1">Excel</span>lence In <br> <span class="color-2">Fire</span> Safety and <br> <span class="color-2">Security</span></h1>
     </div>
   </div>
+  
 </div>
 <!-- Site Hero End -->
 
@@ -34,41 +38,49 @@
     <div class="container pt-3">
       <div class="row">
         <div class="col-md-3 mb-3" data-aos="fade-down">
-          <div class="card" style="background-color: #bc2025;">
-            <div class="card-body d-flex align-items-center justify-content-center">
-              <div class="text-center text-white p-4">
-                <i class="fa fa-certificate mb-4" aria-hidden="true" style="font-size: 5rem;"></i><br>
-                <span class="h5">Wide range of top-quality services</span>
+          <div class="card">
+            <div class="card-header p-0">
+              <img src=".././assets/images/home-1.jpeg" class="img-fluid" alt="">
+            </div>
+            <div class="card-body d-flex align-items-center justify-content-center" style="background-color: #bc2025;">
+              <div class="text-center text-white p-2">
+                <span class="h5">Wide range of top quality services</span>
               </div>
             </div>
           </div>
         </div>
         <div class="col-md-3 mb-3" data-aos="fade-down">
-          <div class="card" style="background-color: #bc2025;">
-            <div class="card-body d-flex align-items-center justify-content-center">
-              <div class="text-center text-white p-4">
-                <i class="fa fa-microchip mb-4" aria-hidden="true" style="font-size: 5rem;"></i><br>
-                <span class="h5">Adapt with cutting-edge technology</span>
+          <div class="card">
+            <div class="card-header p-0">
+              <img src=".././assets/images/home-2.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="card-body d-flex align-items-center justify-content-center" style="background-color: #bc2025;">
+              <div class="text-center text-white p-2">
+                <span class="h5">Cutting-edge technology</span>
               </div>
             </div>
           </div>
         </div>
         <div class="col-md-3 mb-3" data-aos="fade-down">
-          <div class="card" style="background-color: #bc2025;">
-            <div class="card-body d-flex align-items-center justify-content-center">
-              <div class="text-center text-white p-4">
-                <i class="fa fa-shield mb-4" aria-hidden="true" style="font-size: 5rem;"></i><br>
-                <span class="h5">Secure the safety of your business</span>
+          <div class="card">
+            <div class="card-header p-0">
+              <img src=".././assets/images/home-3.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="card-body d-flex align-items-center justify-content-center" style="background-color: #bc2025;">
+              <div class="text-center text-white p-2">
+                <span class="h5">Ensures the safety of your home</span>
               </div>
             </div>
           </div>
         </div>
         <div class="col-md-3 mb-3" data-aos="fade-down">
-          <div class="card" style="background-color: #bc2025;">
-            <div class="card-body d-flex align-items-center justify-content-center">
-              <div class="text-center text-white p-4">
-                <i class="fa fa-fire mb-4" aria-hidden="true" style="font-size: 5rem;"></i><br>
-                <span class="h5">Reduce fire hazards in your workspace</span>
+          <div class="card">
+            <div class="card-header p-0">
+              <img src=".././assets/images/home-4.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="card-body d-flex align-items-center justify-content-center" style="background-color: #bc2025;">
+              <div class="text-center text-white p-2">
+                <span class="h5">Reduces fire hazards in your workplace</span>
               </div>
             </div>
           </div>
@@ -81,37 +93,13 @@
   <!-- Site About Start -->
   <div class="container pb-3">
     <div class="row">
-      <div class="col-md-6" data-aos="fade-right">
-        <img src=".././assets/images/image-1.png" class="img-fluid" alt="">
-      </div>
-      <div class="col-md-6 d-flex align-items-center mt-3" data-aos="fade-left">
+      <div class="col-md-12 d-flex align-items-center mt-3" data-aos="fade-left">
         <div>
-          <h2 class="ft-monoton text-uppercase">Our Mission</h2>
-          <p class="lead text-justify">Our mission is to give you the protection and safety for the people and things you love. Excel Fire prides itself in providing our customers only the best quality of services because there is nothing more important than the safety and security of your business. We provide a wide range of top-quality services regarding fire alarm systems by using cutting-edge technology.</p>
+          <h2 class="ft-racing-sans text-uppercase"><span style="color: #373578;">Our</span> <span style="color: #bc2025;">Mission</span></h2>
+          <p class="lead text-justify">Our mission is to give you the protection and safety for the people and things you love. Excel Fire prides itself in providing our customers only the best quality services because there is nothing more important to us than the safety and security of your family and business. We do this by providing a wide range of top quality fire alarm systems and cutting-edge technology.</p>
         </div>
       </div>
     </div>
   </div>
   <!-- Site About End -->
 </div>
-
-<!-- Site Clients Start -->
-<div class="site-clients bg-dark d-none d-md-block" data-aos="fade-down">
-  <div class="container py-5">
-    <div class="row">
-      <div class="col-md-4">
-        <img src=".././assets/images/clients/ra-nelson-logo.png" class="img-fluid" alt="">
-        <img src=".././assets/images/clients/shaw-logo.png" class="img-fluid" alt="">
-      </div>
-      <div class="col-md-4">
-        <img src=".././assets/images/clients/finbro-logo.png" class="img-fluid" alt="">
-        <img src=".././assets/images/clients/evans-logo.png" class="img-fluid" alt="">
-     
-      </div>
-      <div class="col-md-4">
-        <img src=".././assets/images/clients/fci-logo.png" class="img-fluid" alt="">
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Site Clients End -->

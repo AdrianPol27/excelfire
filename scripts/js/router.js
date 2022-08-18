@@ -27,6 +27,21 @@ const urlRoutes = {
 		title: urlPageTitle + " | About",
 		description: "This is the about page",
 	},
+	"/services": {
+		page: "/pages/services.html",
+		title: urlPageTitle + " | Services",
+		description: "This is the services page",
+	},
+	"/faqs": {
+		page: "/pages/faqs.html",
+		title: urlPageTitle + " | FAQs",
+		description: "This is the faqs page",
+	},
+	"/contact-us": {
+		page: "/pages/contact-us.html",
+		title: urlPageTitle + " | Contact Us",
+		description: "This is the contact us page",
+	},
 };
 
 // create a function that watches the url and calls the urlLocationHandler
